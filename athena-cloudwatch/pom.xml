@@ -13,7 +13,7 @@
     <version>${aws-athena-federation-sdk.version}</version>
 
     <properties>
-        <slf4jVersion>1.7.30</slf4jVersion>
+        <slf4jVersion>1.7.32</slf4jVersion>
     </properties>
 
     <dependencies>
@@ -102,8 +102,7 @@
                     </filters>
                     <transformers>
                         <!-- This transformer is here to concatenate log4j2 cache during shading -->
-                        <transformer
-                                implementation="com.github.edwgiz.mavenShadePlugin.log4j2CacheTransformer.PluginsCacheFileTransformer">
+                        <transformer implementation="com.github.edwgiz.mavenShadePlugin.log4j2CacheTransformer.PluginsCacheFileTransformer">
                         </transformer>
                     </transformers>
                 </configuration>
