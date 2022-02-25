@@ -55,12 +55,12 @@
         <dependency>
             <groupId>com.amazonaws</groupId>
             <artifactId>aws-java-sdk-timestreamwrite</artifactId>
-            <version>1.11.873</version>
+            <version>1.12.166</version>
         </dependency>
         <dependency>
             <groupId>com.amazonaws</groupId>
             <artifactId>aws-java-sdk-timestreamquery</artifactId>
-            <version>1.11.873</version>
+            <version>1.12.166</version>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -122,8 +122,7 @@
                     </filters>
                     <transformers>
                         <!-- This transformer is here to concatenate log4j2 cache during shading -->
-                        <transformer
-                                implementation="com.github.edwgiz.mavenShadePlugin.log4j2CacheTransformer.PluginsCacheFileTransformer">
+                        <transformer implementation="com.github.edwgiz.mavenShadePlugin.log4j2CacheTransformer.PluginsCacheFileTransformer">
                         </transformer>
                     </transformers>
                 </configuration>
