@@ -104,12 +104,12 @@
         <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty-buffer</artifactId>
-            <version>4.1.42.Final</version>
+            <version>4.1.77.Final</version>
         </dependency>
         <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty-common</artifactId>
-            <version>4.1.42.Final</version>
+            <version>4.1.77.Final</version>
         </dependency>
     </dependencies>
 
@@ -142,8 +142,7 @@
                     </filters>
                     <transformers>
                         <!-- This transformer is here to concatenate log4j2 cache during shading -->
-                        <transformer
-                                implementation="com.github.edwgiz.mavenShadePlugin.log4j2CacheTransformer.PluginsCacheFileTransformer">
+                        <transformer implementation="com.github.edwgiz.mavenShadePlugin.log4j2CacheTransformer.PluginsCacheFileTransformer">
                         </transformer>
                     </transformers>
                 </configuration>
