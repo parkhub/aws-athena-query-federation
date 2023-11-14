@@ -44,7 +44,7 @@
          <dependency>
             <groupId>org.apache.tinkerpop</groupId>
             <artifactId>gremlin-core</artifactId>
-            <version>3.4.8</version>
+            <version>3.5.5</version>
         </dependency>
 
          <dependency>
@@ -99,7 +99,7 @@
         <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty-all</artifactId>
-            <version>4.1.42.Final</version>
+            <version>4.1.44.Final</version>
         </dependency>
         <dependency>
             <groupId>io.netty</groupId>
@@ -142,8 +142,7 @@
                     </filters>
                     <transformers>
                         <!-- This transformer is here to concatenate log4j2 cache during shading -->
-                        <transformer
-                                implementation="com.github.edwgiz.mavenShadePlugin.log4j2CacheTransformer.PluginsCacheFileTransformer">
+                        <transformer implementation="com.github.edwgiz.mavenShadePlugin.log4j2CacheTransformer.PluginsCacheFileTransformer">
                         </transformer>
                     </transformers>
                 </configuration>
